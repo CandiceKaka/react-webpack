@@ -20,7 +20,7 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react", // react18这里也可以改成react-jsx
-    "experimentalDecorators": true  //  装饰器
+    "experimentalDecorators": true  //  开启装饰器的使用
   },
   "include": ["./src"]
 }

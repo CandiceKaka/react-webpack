@@ -1,3 +1,5 @@
+//  图片声明的文件
+
 declare module '*.svg'
 declare module '*.png'
 declare module '*.jpg'

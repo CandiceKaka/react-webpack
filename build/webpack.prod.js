@@ -9,10 +9,10 @@ const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 // const PurgeCSSPlugin = require('purgecss-webpack-plugin')
 // const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
-
 module.exports = merge(baseConfig, {
-  mode: 'production',
+  mode: 'production', //  生产模式，会开启tree-shaking和压缩代码以及其他优化
   plugins: [
+    //  复制文件插件
     new CopyPlugin({
       patterns: [
         {
@@ -24,6 +24,7 @@ module.exports = merge(baseConfig, {
         }
       ]
     }),
+    //  css单独抽离出来,方便配置缓存策略
     new MiniCssExtractPlugin({
       filename: 'static/css/[name].[contenthash:8].css'
     }),

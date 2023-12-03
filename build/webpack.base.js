@@ -6,7 +6,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 console.log(process.env.NODE_ENV, 'process.env.NODE_ENV')
 module.exports = {
-  entry: path.join(__dirname, '../src/main.js'),
+  entry: path.join(__dirname, '../src/main.tsx'),
 
   output: {
     // filename: '/static/js/[name].[chunkhash:8].js',   //  每个输出的js名称
